@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
-import Switch from 'react-bootstrap/esm/Switch';
+
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -25,11 +25,11 @@ function App() {
     <Router>
       <>
         <Navbar />
-        <Switch>
-          <Route exact path = '/' component = { SearchBooks } />
-          <Route exact path = '/saved' component = { SavedBooks } />
+        <Routes>
+          <Route path = '/' element = { <SearchBooks/> } />
+          <Route path = '/saved' element = { <SavedBooks/> } />
           <Route render = {() => <h1 className = 'display-2'>Wrong page!</h1>} />
-          </Switch>
+          </Routes>
       </>
     </Router>
     </ApolloProvider>
