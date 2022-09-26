@@ -60,13 +60,13 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 
 ## Links to Project
 
-[Depolyed URL to Project]("#")
+[Depolyed URL to Project](https://whispering-meadow-25296.herokuapp.com/)
 
 [GitHub URL to Project](https://github.com/idakukimiya/ledgerPortal)
 
 ## Screenshot of Project
 
-![Screenshot](assets/images/)
+![Screenshot](assets/images/screenshot1.png)
 
 ## Technology
 
